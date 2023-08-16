@@ -25,7 +25,7 @@ Vagrant.configure("2") do |config|
   config.vm.define "web" do |web|
         web.vm.box = "shekeriev/debian-11"
         web.vm.hostname = "web"
-#        web.vm.network "public_network", ip: "192.168.15.71"
+##        web.vm.network "public_network", ip: "192.168.15.71"
          web.vm.network "private_network", ip: "172.17.177.101"
         web.vm.provider "virtualbox" do |vb|
                 vb.name = "web"
